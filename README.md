@@ -1,6 +1,6 @@
 # OCR Image to Text Extraction using Tesseract and Google Cloud Vision API
 
-## Overview
+## Project Breakdown
 
 1. Page Segmentation by lines
    - Use OpenCV to find lines between sections
@@ -11,6 +11,23 @@
    - Extracting image to text by segments
    - Clean up text and remove unwanted characters
    - Convert extracted values to dataframe
+  
+## Technical Stack
+
+1. Tesseract
+   - Tesseract is useful for converting image to text
+   - Free open source python library
+   - Cons : unable to correctly detect handwritten text
+2. Google Cloud Vision API
+   - Performs way better for detecting handwritten text from image
+   - Cons : API cost
+
+## Error Handling
+
+1. Extracting text after specific keywords
+   - Assumption made that the "aircraft journey summary" follows a fixed tabular key + value format
+   - All value that appears after the pre-specified substring(s) is returned and stored
+
 
 ### Example Image
 ![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/img.png)
@@ -86,6 +103,7 @@ substrings = {
 columns = []
 values = []
 
+# Only limiting to the tabular section
 for i in range(1, len(df_SegmentLocations) - 1):
     y = df_SegmentLocations['SegmentStart'][i]
     h = df_SegmentLocations['Height'][i]
