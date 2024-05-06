@@ -18,5 +18,10 @@
    - Extracting image to text by segments
    - Clean up text and remove unwanted characters
    - Convert extracted values to dataframe
+  
+## Repository
+
+Refer to [notebook.md](https://github.com/HuiminTey/huimintey/blob/main/ADE_Assessment.ipynb)
+
 
 
