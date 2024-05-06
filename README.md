@@ -13,7 +13,7 @@
    - Convert extracted values to dataframe
 
 ### Example Image
-![alt text](https://github.com/HuiminTey/huimintey/blob/main/img.png)
+![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/img.png)
 
 ### Step 1 - Identifying line coordinates
 ```
@@ -41,7 +41,7 @@ lineLocations = findHorizontalLines(image_path)
 plt.figure(figsize=(24,24))
 plt.imshow(lineLocations, cmap='Greys')
 ```
-
+![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/line_break.png)
 
 ### Step 2 - Image segmentation
 ```
@@ -67,7 +67,7 @@ w = lineLocations.shape[1]
 segments = pageSegmentation1(img, w, df_SegmentLocations)
 ```
 
-![alt text](https://github.com/HuiminTey/huimintey/blob/main/img.png)
+![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/segment_image.png)
 
 ### Step 3 - Extracting Text
 ```
@@ -115,7 +115,7 @@ for i in range(1, len(df_SegmentLocations) - 1):
 df = pd.DataFrame([values], columns=columns)
 df
 ```
-![alt text](https://github.com/HuiminTey/huimintey/blob/main/img.png)
+![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/output.png)
 
 ## Repository
 
