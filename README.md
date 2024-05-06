@@ -1,13 +1,6 @@
 # OCR Image to Text Extraction using Tesseract and Google Cloud Vision API
 
-<details>
-    <summary>
-        <b>
-            <font size="+2">
-                Overview
-            </font>
-        </b>
-    </summary>
+## Overview
 
 1. Page Segmentation by lines
    - Use OpenCV to find lines between sections
