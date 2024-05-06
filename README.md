@@ -1,5 +1,3 @@
-### Hi there 👋
+## OCR Image to Text Extraction
 
-<!--
-Huimin Tey's repository
--->
+Image to Text Extraction using :
