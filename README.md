@@ -28,7 +28,17 @@
    - Assumption made that the "aircraft journey summary" follows a fixed tabular key + value format
    - All value that appears after the pre-specified substring(s) is returned and stored
 
+## Deployment
 
+1. EKS
+   - Suggested deployment using Docker for containerisation and deploy using Kurbenetes
+   - Use the endpoint to receive any incoming input (images) from users
+   - Automate the process of image to text extraction and upload to data warehouse like Redshift
+2. Monitoring
+   - Real time visual monitoring by connecting data warehouse to visualisation playform like Tableu/Quicksight
+
+
+     
 ### Example Image
 ![alt text](https://github.com/HuiminTey/huimintey/blob/main/image/img.png)
 
